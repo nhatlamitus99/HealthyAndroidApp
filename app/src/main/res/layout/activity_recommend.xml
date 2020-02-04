@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".RecommendActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thực đơn "
+        android:textSize="25dp"
+        >
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/lvRec"
+        android:layout_width="match_parent"
+        android:layout_height="333dp">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giấc ngủ "
+        android:textSize="25dp"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:paddingLeft="40dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Tối ">
+            </TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                android:layout_gravity="end"
+                android:id="@+id/sleepNight"
+                android:text="7"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  giờ/ngày "
+                android:layout_gravity="center"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="120dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Trưa ">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:id="@+id/sleepAfternoon"
+                android:textAlignment="textEnd"
+                android:textSize="20dp"
+                android:layout_gravity="end"
+                android:text="1"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:text="  giờ/ngày"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Lượng nước "
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/recWater"
+            android:text="4"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  lít/ngày "
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Cường độ tập "
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:layout_width="50dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/recGym"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  giờ/ngày "
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

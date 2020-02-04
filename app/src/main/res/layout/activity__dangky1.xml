@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#E0E3E6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#EEF1F3"
+        android:layout_height="55dp"
+        android:text="Thiết lập tài khoản"
+        android:textSize="25dp"
+        android:textColor="#1C95E0"
+        android:padding="5dp"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:hint="Họ và tên">
+
+    </TextView>
+
+    <EditText
+        android:paddingLeft="20dp"
+        android:id="@+id/name"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="20dp"
+        android:hint="Ngày sinh">
+
+    </TextView>
+
+    <DatePicker
+        android:layout_width="297dp"
+        android:layout_height="366dp"
+        android:id="@+id/date"
+        android:layout_gravity="center">
+
+    </DatePicker>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: "
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                >
+
+            </TextView>
+
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nam"
+                android:text="Nam">
+
+            </RadioButton>
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:id="@+id/nu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nữ">
+
+            </RadioButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:text="Chiều cao:"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Cân nặng:"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp">
+
+            </EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Cực kì thoải mái"
+        android:id="@+id/a"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/b"
+        android:title="Thoải mái">
+
+    </item>
+
+    <item
+        android:id="@+id/c"
+        android:title="Bình thường">
+
+    </item>
+
+    <item
+        android:id="@+id/d"
+        android:title="Hơi khó chịu">
+
+    </item>
+
+    <item
+        android:id="@+id/e"
+        android:title="Khó chịu">
+
+    </item>
+
+    <item
+        android:id="@+id/f"
+        android:title="Mệt mỏi">
+
+    </item>
+    <item
+        android:id="@+id/g"
+        android:title="Kiệt sức">
+
+    </item>
+</menu>

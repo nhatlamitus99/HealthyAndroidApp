@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StatisticActivity">
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chart">
+
+    </lecho.lib.hellocharts.view.LineChartView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tình trạng sức khỏe 7 ngày gần nhất "
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_weight="8">
+
+    </TextView>
+
+</LinearLayout>
