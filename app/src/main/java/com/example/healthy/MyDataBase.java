@@ -104,7 +104,7 @@ public class MyDataBase extends SQLiteOpenHelper {
         Cursor res2 = getReadableDatabase().rawQuery("select * from food ", null);
         res2.moveToFirst();
 
-        int c=0;
+        int c=1;
         while (res.isAfterLast() == false) {
             //Date d=new Date("12-04-2019");
             //DateFormat
@@ -147,16 +147,16 @@ public class MyDataBase extends SQLiteOpenHelper {
 
     void datatest()
     {
-        insertState("10/01/2020",3);
-        insertState("11/01/2020",1);
-        insertState("12/01/2020",2);
-        insertState("13/01/2020",4);
-        insertState("14/01/2020",2);
-
-        insertFood("10/01/2020",2,2);
-        insertFood("10/01/2020",3,1);
-        insertFood("11/01/2020",1,3);
-        insertFood("12/01/2020",4,3);
+//        insertState("10/01/2020",3);
+//        insertState("11/01/2020",1);
+//        insertState("12/01/2020",2);
+//        insertState("13/01/2020",4);
+//        insertState("14/01/2020",2);
+//
+//        insertFood("10/01/2020",2,2);
+//        insertFood("10/01/2020",3,1);
+//        insertFood("11/01/2020",1,3);
+//        insertFood("12/01/2020",4,3);
     }
 
 }

@@ -36,7 +36,7 @@ public class FoodActivity extends AppCompatActivity {
     ArrayList<Item_RV> list_drink;
     Adapter_RV adapter_rv_drink;
 
-    ArrayList<Item> list_food=new  ArrayList<Item>();
+    ArrayList<Item> list_food = new  ArrayList<Item>();
     ArrayList<Item> list_drinks = new ArrayList<Item>();
 
 

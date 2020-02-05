@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="Cực kì thoải mái"
+        android:title="Cực kì thoải mái          "
         android:id="@+id/a"
         >
 

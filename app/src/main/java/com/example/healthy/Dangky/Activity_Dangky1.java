@@ -14,7 +14,6 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.healthy.MainActivity;
-import com.example.healthy.MainScreenActivity;
 import com.example.healthy.R;
 
 import java.util.ArrayList;
