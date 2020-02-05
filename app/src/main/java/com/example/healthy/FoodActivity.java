@@ -13,6 +13,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -48,6 +49,9 @@ public class FoodActivity extends AppCompatActivity {
         String time = ProcessDate();
         actionBar.setTitle(time);
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+
+
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.rv);
         RecyclerView rv_drink = (RecyclerView) findViewById(R.id.rvDrink);

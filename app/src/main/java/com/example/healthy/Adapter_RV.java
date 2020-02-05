@@ -60,12 +60,23 @@ public class Adapter_RV extends RecyclerView.Adapter<Adapter_RV.ViewHolder> {
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onClick(View view, final int position, boolean isLongClick) {
+                holder.btnMinus.setVisibility(View.VISIBLE);
                 holder.btnPlus.setVisibility(View.VISIBLE);
                 holder.layout.setBackgroundColor(Color.rgb(26,136,145));
                 holder.btnPlus.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         int temp = Integer.parseInt(holder.number.getText().toString())+1;
+                        holder.number.setText(temp+"");
+                        list.get(position).setNumber(temp);
+
+
+                    }
+                });
+                holder.btnMinus.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        int temp = Integer.parseInt(holder.number.getText().toString())-1;
                         holder.number.setText(temp+"");
                         list.get(position).setNumber(temp);
 
@@ -114,6 +125,7 @@ public class Adapter_RV extends RecyclerView.Adapter<Adapter_RV.ViewHolder> {
         public TextView title;
         public TextView number;
         public ImageButton btnPlus;
+        public ImageButton btnMinus;
         public LinearLayout layout;
 
         public ViewHolder(View itemView) {
@@ -123,6 +135,7 @@ public class Adapter_RV extends RecyclerView.Adapter<Adapter_RV.ViewHolder> {
             title = itemView.findViewById(R.id.name);
             number = itemView.findViewById(R.id.number);
             btnPlus = itemView.findViewById(R.id.btnPlus);
+            btnMinus = itemView.findViewById(R.id.btnMinus);
             layout = itemView.findViewById(R.id.layout);
 
             itemView.setOnClickListener(this);

@@ -29,6 +29,7 @@ public class MainScreenActivity extends AppCompatActivity {
 
     ImageView imgbtnFeel;
     int label;
+    Button test;
 
     MyDataBase db=new MyDataBase(this);
 
@@ -36,6 +37,18 @@ public class MainScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
+
+        test = (Button) this.findViewById(R.id.test);
+
+
+
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                test.setText("Success");
+            }
+        });
+
         ActionBar actionBar = getSupportActionBar();
         String time = ProcessDate();
         actionBar.setTitle(time);
@@ -47,6 +60,8 @@ public class MainScreenActivity extends AppCompatActivity {
 
 
         readNews();
+
+
 
 
     }
@@ -135,7 +150,6 @@ public class MainScreenActivity extends AppCompatActivity {
         ImageView news4 = (ImageView) findViewById(R.id.n4);
         ImageView news5 = (ImageView) findViewById(R.id.n5);
         ImageView news6 = (ImageView) findViewById(R.id.n6);
-        ImageView news7 = (ImageView) findViewById(R.id.n7);
 
         news1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -191,15 +205,7 @@ public class MainScreenActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        news7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://suckhoedoisong.vn/hai-phong-cho-xuat-vien-3-benh-nhan-nghi-ngo-ncov-co-ket-qua-am-tinh-n168482.html";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
+
 
     }
 
