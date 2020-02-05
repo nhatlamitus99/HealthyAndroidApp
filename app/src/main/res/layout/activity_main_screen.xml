@@ -175,13 +175,6 @@
 
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OK"
-            android:id="@+id/test">
-
-            </Button>
 
 
         <LinearLayout
@@ -292,14 +285,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
-                        <ImageButton
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
                             android:id="@+id/do1"
                             android:src="@drawable/do1">
 
-                        </ImageButton>
+                        </ImageView>
 
 
                         <ImageView
@@ -342,6 +335,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
                             android:id="@+id/do6"
                             android:src="@drawable/do6">
 
@@ -392,7 +386,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="30dp"
                         android:id="@+id/n2"
                         android:src="@drawable/news3">
 
@@ -401,7 +395,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="30dp"
                         android:id="@+id/n3"
                         android:src="@drawable/news4">
 
@@ -410,7 +404,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="30dp"
                         android:id="@+id/n4"
                         android:src="@drawable/news6">
 
@@ -419,7 +413,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="30dp"
                         android:id="@+id/n5"
                         android:src="@drawable/news2">
 
@@ -428,9 +422,10 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:paddingLeft="20dp"
+                        android:paddingLeft="30dp"
                         android:id="@+id/n6"
-                        android:src="@drawable/news3">
+                        android:paddingRight="20dp"
+                        android:src="@drawable/news8">
 
                     </ImageView>
 
@@ -440,6 +435,87 @@
             </HorizontalScrollView>
 
         </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:textColor="#8A1D1D"
+                    android:textStyle="bold"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:text=" Tips for health  >>">
+
+                </TextView>
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tip1"
+                            android:src="@drawable/tip1">
+
+                        </ImageView>
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tip2"
+                            android:src="@drawable/tip5">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tip3"
+                            android:src="@drawable/tip3">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/tip4"
+                            android:src="@drawable/tip4">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:id="@+id/tip5"
+                            android:src="@drawable/tip2">
+
+                        </ImageView>
+
+
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
