@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2DFDF"
+    android:background="@color/colorBackground"
+    android:id="@+id/layout"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -69,118 +70,133 @@
 
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="93dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="#E2DFDF"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:paddingBottom="3dp">
+            >
 
-            <ImageButton
-                android:id="@+id/food"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@drawable/foods"
-                android:src="@drawable/foods">
-
-            </ImageButton>
-
-            <LinearLayout
-                android:layout_width="8dp"
                 android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/food"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/foods"
+                    android:src="@drawable/foods">
 
-            </LinearLayout>
+                </ImageButton>
+                <TextView
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/f_d"
+                    android:layout_height="wrap_content"
+                    android:text="Food-Drink">
 
-            <ImageButton
-                android:id="@+id/exercise"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:layout_gravity="bottom"
-                android:background="@drawable/doexc">
-
-            </ImageButton>
-
-            <LinearLayout
-                android:layout_width="8dp"
-                android:layout_height="wrap_content">
-
+                </TextView>
             </LinearLayout>
 
 
 
-            <ImageButton
-                android:id="@+id/sleep"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@drawable/sleeps">
-
-            </ImageButton>
-
             <LinearLayout
-                android:layout_width="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="11dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/exercise"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/doexc">
+
+                </ImageButton>
+                <TextView
+                    android:textColor="@color/colorText"
+                    android:id="@+id/act"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Activity">
+
+                </TextView>
 
             </LinearLayout>
 
 
-            <ImageButton
-                android:id="@+id/water"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@drawable/waters">
 
-            </ImageButton>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/sleeps">
+
+                </ImageButton>
+
+                <TextView
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/sle"
+                    android:layout_height="wrap_content"
+                    android:text="Sleep"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/waters">
+
+                </ImageButton>
+                <TextView
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wa"
+                    android:textAlignment="center"
+                    android:text="Water"
+                    android:layout_gravity="center"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+
 
 
         </LinearLayout>
 
 
-        <LinearLayout
-            android:background="#E2DFDF"
-            android:layout_width="match_parent"
-            android:paddingLeft="15dp"
-            android:paddingBottom="10dp"
-            android:layout_height="wrap_content">
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="15dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Food-Drink">
-
-            </TextView>
-
-            <TextView
-                android:paddingLeft="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activity">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:paddingLeft="30dp"
-                android:layout_height="wrap_content"
-                android:text="Sleep"
-                >
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Water"
-                android:paddingLeft="32dp"
-                >
-
-            </TextView>
-
-
-        </LinearLayout>
+      </LinearLayout>
 
 
 
@@ -199,6 +215,7 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
+            android:paddingTop="20dp"
             android:paddingLeft="4dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content">
@@ -206,10 +223,10 @@
 
             <ImageButton
                 android:id="@+id/idea"
-                android:layout_width="161dp"
-                android:layout_height="163dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_gravity="center"
-                android:background="@drawable/ideas">
+                android:background="@drawable/idea">
 
             </ImageButton>
 
@@ -223,60 +240,65 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/alarm"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:background="@drawable/clock">
-
-            </ImageButton>
-
             <LinearLayout
-                android:layout_width="60dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/alarm"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/clock">
+
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorText"
+                    android:text="Alarm">
+
+                </TextView>
 
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/statistic"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:background="@drawable/statistics"
-                android:paddingRight="10dp">
 
-            </ImageButton>
+            <LinearLayout
+                android:paddingLeft="60dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/statistic"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/statistics"
+                    android:paddingRight="10dp">
+
+                </ImageButton>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorText"
+                    android:text="Statistic">
+
+                </TextView>
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:paddingTop="10dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingLeft="56dp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:text="Alarm">
-
-            </TextView>
-
-            <TextView
-                android:textStyle="bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingLeft="18dp"
-                android:text="Statistic">
-
-            </TextView>
-
-        </LinearLayout>
 
         <LinearLayout
                 android:paddingTop="20dp"

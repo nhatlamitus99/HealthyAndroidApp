@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,11 +14,14 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
 import android.view.ContextMenu;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.healthy.Dangky.Activity_Dangky1;
@@ -44,7 +48,10 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
+
     ImageView imgbtnFeel;
+    LinearLayout layout;
+    TextView f_d, sle, wa, act;
     int label;
     ArrayList<String> listData = new ArrayList<String>();
     MyDataBase dbb=new MyDataBase(this);
@@ -87,11 +94,18 @@ public class MainActivity extends AppCompatActivity {
         takeTips();
 
         String test = crawlData();
-        Toast.makeText(this, test, Toast.LENGTH_SHORT).show();
 
 
         imgbtnFeel = (ImageView) findViewById(R.id.feel);
         registerForContextMenu(imgbtnFeel);
+
+        layout = (LinearLayout) findViewById(R.id.layout);
+        f_d = (TextView) findViewById(R.id.f_d);
+        wa = (TextView) findViewById(R.id.wa);
+        sle = (TextView) findViewById(R.id.sle);
+        act = (TextView) findViewById(R.id.act);
+
+
 
     }
 
@@ -412,6 +426,47 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.actionbar_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            case R.id.light:
+
+                settingLight();
+
+                break;
+            case R.id.dark:
+
+                settingDark();
+
+                break;
+            default:break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void settingDark() {
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
+    }
+
+    private void settingLight() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
+    }
 
 
     @Override
