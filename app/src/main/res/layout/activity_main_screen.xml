@@ -262,7 +262,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:paddingLeft="60dp"
+                android:paddingLeft="50dp"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -295,7 +295,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingLeft="60dp">
+                android:paddingLeft="50dp">
 
                 <ImageButton
                     android:id="@+id/phone"
@@ -333,7 +333,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:textColor="#8A1D1D"
+                    android:textColor="#AF3737"
                     android:textStyle="bold"
                     android:paddingTop="20dp"
                     android:paddingBottom="5dp"
@@ -424,7 +424,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
-                android:textColor="#8A1D1D"
+                android:textColor="#AF3737"
                 android:textStyle="bold"
                 android:paddingTop="20dp"
                 android:paddingBottom="5dp"
@@ -513,7 +513,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="15dp"
-                    android:textColor="#8A1D1D"
+                    android:textColor="#AF3737"
                     android:textStyle="bold"
                     android:paddingTop="20dp"
                     android:paddingBottom="5dp"

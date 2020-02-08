@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="20dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benh Vien Hoan My"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:id="@+id/name">
+
+    </TextView>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123 Ly Thuong Kiet, Quan 10, tp HCM"
+        android:id="@+id/location">
+
+    </TextView>
+
+    <TextView
+        android:textSize="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0123456789"
+        android:id="@+id/phone">
+
+    </TextView>
+
+
+</LinearLayout>

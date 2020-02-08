@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     ImageView imgbtnFeel;
-    LinearLayout layout;
     TextView f_d, sle, wa, act;
     int label;
     ArrayList<String> listData = new ArrayList<String>();
@@ -99,17 +98,13 @@ public class MainActivity extends AppCompatActivity {
         imgbtnFeel = (ImageView) findViewById(R.id.feel);
         registerForContextMenu(imgbtnFeel);
 
-        layout = (LinearLayout) findViewById(R.id.layout);
-        f_d = (TextView) findViewById(R.id.f_d);
-        wa = (TextView) findViewById(R.id.wa);
-        sle = (TextView) findViewById(R.id.sle);
-        act = (TextView) findViewById(R.id.act);
 
 
 
     }
 
     private void function() {
+        ImageButton imgbtnContact = (ImageButton) findViewById(R.id.phone);
         ImageButton imgbtnFood = (ImageButton) findViewById(R.id.food);
         ImageButton imgbtnExercise = (ImageButton) findViewById(R.id.exercise);
         ImageButton imgbtnSleep = (ImageButton) findViewById(R.id.sleep);
@@ -119,6 +114,15 @@ public class MainActivity extends AppCompatActivity {
         ImageButton imgbtnRec = (ImageButton) findViewById(R.id.idea);
         ImageButton imgbtnSet = (ImageButton) findViewById(R.id.setting);
         final ImageButton imgbtnUser = (ImageButton) findViewById(R.id.user);
+
+        imgbtnContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         imgbtnFood.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -440,12 +444,10 @@ public class MainActivity extends AppCompatActivity {
                 onBackPressed();
                 return true;
             case R.id.light:
-
                 settingLight();
 
                 break;
             case R.id.dark:
-
                 settingDark();
 
                 break;
