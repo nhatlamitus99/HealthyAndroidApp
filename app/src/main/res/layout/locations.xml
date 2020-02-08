@@ -8,13 +8,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Benh Vien Hoan My"
-        android:textColor="#000000"
+        android:textColor="@color/colorText"
         android:textSize="15dp"
         android:id="@+id/name">
 
     </TextView>
 
     <TextView
+        android:textColor="@color/colorText"
         android:paddingLeft="10dp"
         android:textSize="10dp"
         android:layout_width="wrap_content"
@@ -25,6 +26,7 @@
     </TextView>
 
     <TextView
+        android:textColor="@color/colorText"
         android:textSize="10dp"
         android:paddingLeft="10dp"
         android:layout_width="wrap_content"

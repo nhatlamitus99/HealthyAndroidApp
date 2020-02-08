@@ -48,10 +48,8 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-
-    ImageView imgbtnFeel;
-    TextView f_d, sle, wa, act;
     int label;
+    ImageView imgbtnFeel;
     ArrayList<String> listData = new ArrayList<String>();
     MyDataBase dbb=new MyDataBase(this);
     ArrayList<Integer> listFeel = new ArrayList<Integer>();
@@ -90,8 +88,6 @@ public class MainActivity extends AppCompatActivity {
 
         doExcercise();
 
-        takeTips();
-
         String test = crawlData();
 
 
@@ -120,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(intent);
+
             }
         });
 
@@ -343,51 +340,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void takeTips() {
-
-        ImageView news1 = (ImageView) findViewById(R.id.tip1);
-        ImageView news2 = (ImageView) findViewById(R.id.tip2);
-        ImageView news3 = (ImageView) findViewById(R.id.tip3);
-        ImageView news4 = (ImageView) findViewById(R.id.tip4);
-
-        news1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "http://yennunest.com.vn/7-tips-cham-soc-suc-khoe-mua-he-cho-be/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-        news2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://hellobacsi.com/song-khoe/bi-quyet-song-khoe/cham-soc-suc-khoe-o-noi-lam-viec/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-        news3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://wanderlusttips.com/2017/09/17/du-lich-cham-soc-suc-khoe-cuoc-hanh-trinh-tai-tao-ban/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-        news4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "http://tinbaihay.net/12-tips-cham-soc-suc-khoe-mua-he-cho-be-me-khong-nen-bo-qua/post-4973833191462303916.htm";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-
-    }
 
     private String crawlData() {
 
