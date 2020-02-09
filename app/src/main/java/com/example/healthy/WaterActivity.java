@@ -39,7 +39,7 @@ public class WaterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sleep);
+        setContentView(R.layout.activity_water);
         ActionBar actionBar = getSupportActionBar();
         String time = ProcessDate();
         actionBar.setTitle(time);

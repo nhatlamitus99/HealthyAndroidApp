@@ -152,7 +152,7 @@ public class MyDataBase extends SQLiteOpenHelper {
 //        insertState("12/01/2020",2);
 //        insertState("13/01/2020",4);
 //        insertState("14/01/2020",2);
-//
+
 //        insertFood("10/01/2020",2,2);
 //        insertFood("10/01/2020",3,1);
 //        insertFood("11/01/2020",1,3);

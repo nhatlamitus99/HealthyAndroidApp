@@ -12,7 +12,7 @@
         android:paddingBottom="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WATER"
+        android:text="LƯỢNG NƯỚC "
         style="@style/TextAppearance.AppCompat.Body1"
         android:textSize="30dp"
         android:textColor="#0C8F7F"

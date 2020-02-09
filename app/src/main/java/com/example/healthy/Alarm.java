@@ -68,7 +68,7 @@ public class Alarm extends Activity {
     }
 
     public void onToggleClicked(View view) {
-
+        Ringtone ringtone;
 
         if (((ToggleButton) view).isChecked()) {
             Log.d("MyActivity", "Alarm On");
@@ -82,7 +82,14 @@ public class Alarm extends Activity {
             String temp = alarmTimePicker.getCurrentHour()+" giờ "+alarmTimePicker.getCurrentMinute() + " phút ";
             Toast.makeText(this, "Đã đặt báo thức lúc "+temp, Toast.LENGTH_LONG).show();
 
-            if(time.equals(alarm))
+            Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+            if (alarmUri == null) {
+                alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            }
+            ringtone = RingtoneManager.getRingtone(this, alarmUri);
+            ringtone.play();
+
+           /* if(time.equals(alarm))
             {
                 Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
                 if (alarmUri == null) {
@@ -90,7 +97,8 @@ public class Alarm extends Activity {
                 }
                 Ringtone ringtone = RingtoneManager.getRingtone(this, alarmUri);
                 ringtone.play();
-            }
+            }*/
+
 
             Intent myIntent = new Intent(Alarm.this, AlarmReceiver.class);
             pendingIntent = PendingIntent.getBroadcast(Alarm.this, 0, myIntent, 0);
